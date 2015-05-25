@@ -32,6 +32,17 @@ public class DCDBHelper extends SQLiteOpenHelper {
 
     String OPERATION_TABLE = "operationTable";
 
+    public static final String DATABASE_NAME = "FeedReader.db";
+
+    public static final int DATABASE_VERSION = 1;
+
+    Context mContext;
+
+    public DCDBHelper(Context context)
+    {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    }
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         //SQL Script for creation main Table
@@ -57,5 +68,21 @@ public class DCDBHelper extends SQLiteOpenHelper {
         db.execSQL(tableTypeCreation);
 
         Log.d(LOG_TAG, "Tables created");
+    }
+
+    private String SQL_DELETE_ACCOUNT =
+            "DROP TABLE IF EXISTS " + ACCOUNT_TABLE;
+    private String SQL_DELETE_CATEGORY =
+            "DROP TABLE IF EXISTS " + CATEGORY_TABLE;
+    private String SQL_DELETE_OPERATION =
+            "DROP TABLE IF EXISTS " + OPERATION_TABLE;
+
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
+    {
+        db.execSQL(SQL_DELETE_ACCOUNT);
+        db.execSQL(SQL_DELETE_CATEGORY);
+        db.execSQL(SQL_DELETE_OPERATION);
+
+        onCreate(db);
     }
 }
