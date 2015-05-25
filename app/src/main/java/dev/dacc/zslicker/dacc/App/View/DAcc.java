@@ -24,7 +24,7 @@ public class DAcc extends Activity implements View.OnClickListener  {
 
     public Button incomeBtn, outlayBtn, dialogBtn;
 
- //   public ListView list;
+    public ListView list;
 
     public MainModel model;
 
@@ -37,7 +37,7 @@ public class DAcc extends Activity implements View.OnClickListener  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_ativity);
 
-      //  list = (ListView) findViewById(R.id.MainListView);
+        list = (ListView) findViewById(R.id.MainListView);
         incomeBtn = (Button) findViewById(R.id.IncomeButton);
         incomeBtn.setOnClickListener(this);
         outlayBtn = (Button) findViewById(R.id.OutlayButton);
@@ -55,7 +55,7 @@ public class DAcc extends Activity implements View.OnClickListener  {
         text.setText("Test Text");
     }
 
-/*
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_ativity, menu);
@@ -72,7 +72,7 @@ public class DAcc extends Activity implements View.OnClickListener  {
         }
         return super.onOptionsItemSelected(item);
     }
-*/
+
     /**
      * @param v view witch was clicked
      * method where controller gets actions

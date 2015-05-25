@@ -40,15 +40,13 @@
         android:text="Dialog Test"
         android:onClick=""/>
 
-    <!-- ListView
+    <ListView
         android:id="@+id/MainListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/DialogBtn"
         android:layout_alignLeft="@+id/DialogBtn"
         android:layout_alignParentTop="true"
-        android:background="@null">
-
-    </ListView-->
+        android:background="@null"/>
 
 </RelativeLayout>
