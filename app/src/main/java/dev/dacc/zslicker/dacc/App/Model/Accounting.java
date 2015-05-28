@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by Programmer on 25.05.2015.
  */
-public class MainModel {
+public class Accounting {
     private int id;
     private Operation operation;
     private Category category;

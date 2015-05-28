@@ -1,32 +1,28 @@
 package dev.dacc.zslicker.dacc.App.View;
 
 import dev.dacc.zslicker.dacc.App.Controller.Controller;
-import dev.dacc.zslicker.dacc.App.Model.MainModel;
+import dev.dacc.zslicker.dacc.App.Model.Accounting;
 import dev.dacc.zslicker.dacc.R;
-import dev.dacc.zslicker.dacc.util.SystemUiHider;
 
-import android.annotation.TargetApi;
-import android.app.Activity;
+
 import android.app.Dialog;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class DAcc extends Activity implements View.OnClickListener  {
+public class DAcc extends AppCompatActivity implements View.OnClickListener  {
     private Dialog dlg;
 
     public Button incomeBtn, outlayBtn, dialogBtn;
 
     public ListView list;
 
-    public MainModel model;
+    public Accounting model;
 
     public Controller controller;
     public MainView mainView;

@@ -85,4 +85,33 @@ public class DCDBHelper extends SQLiteOpenHelper {
 
         onCreate(db);
     }
+/*Инсерты*/
+    public void InsertOperation(String OperationName) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(NAME_COLUMN, OperationName);
+        SQLiteDatabase database = this.getWritableDatabase();
+        database.insert(OPERATION_TABLE, null, contentValues);
+        database.close();
+    }
+
+    public void InsertCategory(String CategoryName) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(NAME_COLUMN, CategoryName);
+        SQLiteDatabase database = this.getWritableDatabase();
+        database.insert(CATEGORY_TABLE, null, contentValues);
+        database.close();
+    }
+
+    public void InsertAccounting(int CategoryId, int OperationId, double MoneyCount, String Description) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(CATEGORY_ID, CategoryId);
+        contentValues.put(OPERATION_ID, OperationId);
+        contentValues.put(MONEY_COUNT_COLUMN, MoneyCount);
+        contentValues.put(DESCRIPTION_COLUMN, Description);
+        contentValues.put(DATE_COLUMN, new Date().toString());
+        SQLiteDatabase database = this.getWritableDatabase();
+        database.insert(CATEGORY_TABLE, null, contentValues);
+        database.close();
+    }
+    /**/
 }

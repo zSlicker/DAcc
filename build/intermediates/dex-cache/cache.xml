@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\git\DAcc\DAcc\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="C:\git\DAcc\DAcc\app\build\intermediates\pre-dexed\debug\classes-f88a1865157c1ca7725a1dc562128c54479875bb.jar" />
-    </item>
-    <item
-        jar="C:\git\DAcc\DAcc\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jar="C:\git\Android\DAcc\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="C:\git\DAcc\DAcc\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-9a1bdf1b8fe1dc67018a4409d282f27af12737ec.jar" />
+        <dex dex="C:\git\Android\DAcc\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-ba3dc045582ae3555dcc0b10f49a38012527d0d1.jar" />
+    </item>
+    <item
+        jar="C:\git\Android\DAcc\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\git\Android\DAcc\app\build\intermediates\pre-dexed\debug\classes-907a9603a46a985f5da2c201b9077568c050ebe4.jar" />
+    </item>
+    <item
+        jar="C:\git\Android\DAcc\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\git\Android\DAcc\app\build\intermediates\pre-dexed\debug\classes-0f98c24141b1ed3b04547ee0d43c0410fae8b5d2.jar" />
     </item>
     <item
         jar="C:\Users\Programmer\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="C:\git\DAcc\DAcc\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-314c21f3e6590345395539ae478abf7069858951.jar" />
-    </item>
-    <item
-        jar="C:\git\DAcc\DAcc\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="C:\git\DAcc\DAcc\app\build\intermediates\pre-dexed\debug\classes-4aecb8fc08eccba8fccab629d8df40b48c7c488c.jar" />
+        <dex dex="C:\git\Android\DAcc\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-314c21f3e6590345395539ae478abf7069858951.jar" />
     </item>
 
 </items>
